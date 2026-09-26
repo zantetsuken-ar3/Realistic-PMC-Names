@@ -6,34 +6,18 @@
     <OutputType>Library</OutputType>
     <AssemblyName>RealisticPMCNames</AssemblyName>
     <RootNamespace>RealisticPMCNames</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <SptPath Condition="'$(SptPath)' == ''">C:\SPT\SPT_Runtime</SptPath>
     <OutputPath>bin\$(Configuration)\RealisticPMCNames\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
-
   <ItemGroup>
-    <Reference Include="SPTarkov.Common">
-      <HintPath>$(SptPath)\SPTarkov.Common.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="SPTarkov.DI">
-      <HintPath>$(SptPath)\SPTarkov.DI.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="SPTarkov.Server.Core">
-      <HintPath>$(SptPath)\SPTarkov.Server.Core.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="SemanticVersioning">
-      <HintPath>$(SptPath)\SemanticVersioning.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
+    <Reference Include="SPTarkov.Common"><HintPath>$(SptPath)\SPTarkov.Common.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SPTarkov.DI"><HintPath>$(SptPath)\SPTarkov.DI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SPTarkov.Server.Core"><HintPath>$(SptPath)\SPTarkov.Server.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SemanticVersioning"><HintPath>$(SptPath)\SemanticVersioning.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
-
   <ItemGroup>
-    <None Include="config\*.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="config\*.json"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None>
   </ItemGroup>
 </Project>
